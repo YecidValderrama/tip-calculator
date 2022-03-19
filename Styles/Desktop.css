@@ -1,0 +1,49 @@
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 75%;
+}
+.calulator{
+    padding: 20px;
+    width: 55%;
+}
+.percentage {
+    display: flex;
+    flex-wrap: wrap;
+}
+.button-percentage, .input-custom{
+    width: 120px;
+    height: 40px;
+    font-size: 1.5rem;
+
+}
+.input-custom {
+    margin-top: 5px;
+}
+.count {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 45%;
+    border-radius: 7px;
+}
+p.value-tip-person, p.value-total-persona {
+    font-size: 2.5rem;
+    color: var(--Grayish-cyan);
+}
+.tip-amount, .total-person {
+    margin-top: 25px;
+}
+.numer-people {
+    display: flex;
+    justify-content: space-between;
+}
+/* .percentaje-custom {
+    display: grid;
+    grid-template-columns: auto auto auto;
+} */

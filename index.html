@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./Styles/Mobile.css">
+    <link rel="icon" href="./images/favicon-32x32.png">
+    <link rel="stylesheet" media="only screen and (min-width: 1024px)" href="./Styles/Desktop.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <title>Tip calculator</title>
+</head>
+<body>
+    <h1>SPLI<br>TTER</h1>
+    <div class="container">
+        <div class="calulator">
+            <p>Bill</p>
+            <input type="number" id="Bill" class="input-bill">
+            <p>Select Tip %</p>
+            <div class="percentaje-custom">
+                <div class="percentage" id="botones">
+                   <button class="button-percentage">5</button>
+                   <button class="button-percentage">10</button>
+                   <button class="button-percentage">15</button>
+                   <button class="button-percentage">25</button>
+                   <button class="button-percentage">50</button>
+                   <input type="number" placeholder="Custom" class="input-custom" id="custom-value">
+                </div> 
+            </div>
+            <div class="numer-people">
+                <p>Number of People</p><p id="No-zero" class="Zero-no"></p>
+            </div>
+            <input type="number" class="input-people" id="input-people">
+        </div> 
+        <div class="count">
+            <div class="values">
+                <div class="tip-amount">
+                    <p>Tip Amount<br><span>/ person</span></p>
+                    <p class="value-tip-person" id="tip-person">$0.00</p>
+                </div>
+                <div class="total-person">
+                    <p>Total<br><span>/ person</span></p>
+                    <p class="value-total-persona" id="total-persona">$0.00</p>
+              </div>
+            </div>
+            <div class="button-reset">
+               <button class="reset" onclick="reset()">RESET</button>
+            </div>
+        </div>
+    </div>
+    <script src="./Js/App.js"></script>
+</body>
+</html>
